@@ -1,0 +1,90 @@
+#This progrma  check number is even or odd
+
+
+#!/bin/bash
+# read -p "Enter any number here: " saad
+
+ #if (( saad % 2 == 0 )); then
+   # echo "$saad This number is even"
+# else
+   # echo "$saad This number is odd"
+ #fi
+***************************02***********************************
+#This program add two numbers
+#!/bin/bash
+read -p "Enter first number: " num1
+read -p "Enter Second number: " num2
+echo "Sum :$((num1+num2))"
+***************************03***********************************
+Check For System details
+!/bin/bash
+echo "Check System details : "
+pwd
+hostname
+unname -a
+whoami 
+ifconfig
+**************************04************************************
+Password cracker code 
+#!/bin/bash
+
+pass="2233"
+
+for pin in $(seq -w 0000 9999)
+do
+  if [ "$pin" == "$pass" ]; then
+    echo "This is user pin -> $pin"
+    break
+  fi
+  echo "Try again : $pin"
+done
+****************************05*************************************
+Pass Fail checker
+!/bin/bash
+
+read -p "Enter Student Number: " num
+
+if [ "$num" -ge 10 ]; then
+    echo "Pass"
+else
+    echo "Fail"
+fi
+*****************************06*************************************
+Malicious Code run
+#!/bin/bash
+
+read -p "Are you Hacker? (yes/no): " reply
+
+if [ "$reply" == "yes" ]; then
+  echo "System is formatting..."
+  sleep 1
+  echo "System deleting files..."
+  sleep 2
+  echo "Virus loading..."
+elif [ "$reply" == "no" ]; then
+  echo "Oh, you are a normal person."
+  echo "Enjoy the system."
+else
+  echo "You entered wrong input."
+fi
+*******************************07**********************************
+Check User Credentials
+#!/bin/bash
+
+correct_user="saad"
+correct_pass="pass123"
+
+echo "Enter username:"
+read username
+
+echo "Enter password:"
+read -s password
+
+if [[ "$username" == "$correct_user" && "$password" == "$correct_pass" ]]; then
+  echo "Welcome $username, access granted"
+else
+  echo "Wrong credentials"
+fi
+
+
+
